@@ -42,7 +42,7 @@ const ContactMe = () => {
 
     try {
       const response = await fetch(
-        "https://script.google.com/macros/s/AKfycbzP5vJD-xMESODxvx04YZ-6YeoW4tw0GIYuIqHewI0vsOZRE3h-GIc_j9aMOmcxLxOG/exec",
+        "https://script.google.com/macros/s/AKfycbzSu-YWMxpSWyyKb1NGLwPYBl1ivaNQlwM_zFohch_Ub6XI5dSROTbPmTXHHNoYLK5q/exec",
         {
           method: "POST",
           body: form,
@@ -198,7 +198,7 @@ const ContactMe = () => {
 
         {/* reCAPTCHA */}
         <div className="mb-4">
-          <ReCAPTCHA ref={recaptchaRef} sitekey="6LdWBuQqAAAAABw49urKLivxuaznkcQIDCbogo_h" />
+          <ReCAPTCHA ref={recaptchaRef} sitekey="6LfcSOUqAAAAAKLxvBAlKVqd__lzQjcm_f4kyKAn" />
         </div>
 
         {/* Submit Button */}
