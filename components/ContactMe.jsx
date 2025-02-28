@@ -31,11 +31,11 @@ const ContactMe = () => {
     setLoading(true);
 
     const token = recaptchaRef.current?.getValue();
-    // if (!token) {
-    //   triggerNotification("error", "Please verify reCAPTCHA!");
-    //   setLoading(false);
-    //   return;
-    // }
+    if (!token) {
+      triggerNotification("error", "Please verify reCAPTCHA!");
+      setLoading(false);
+      return;
+    }
 
     const form = new FormData();
     Object.keys(data).forEach((key) => form.append(key, data[key]));
