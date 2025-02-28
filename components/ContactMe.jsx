@@ -39,6 +39,7 @@ const ContactMe = () => {
 
     const form = new FormData();
     Object.keys(data).forEach((key) => form.append(key, data[key]));
+    form.append("g-recaptcha-response", token);
 
     try {
       const response = await fetch(
