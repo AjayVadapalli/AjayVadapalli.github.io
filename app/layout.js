@@ -9,10 +9,10 @@ const jakarta = Plus_Jakarta_Sans({
 });
 
 export const metadata = {
-  title: "Ashwith Rai - Developer & Tech Enthusiast",
+  title: "Ajay - Developer & Tech Enthusiast",
   description:
-    "Ashwith Rai is a passionate web developer and tech enthusiast specializing in modern web technologies. Explore my portfolio and projects here!",
-  keywords: "Ashwith Rai, web developer, Next, React, FastAPI, Next.js",
+    "Ajay is a passionate web developer and tech enthusiast specializing in modern web technologies. Explore my portfolio and projects here!",
+  keywords: "Ajay, web developer, React, FastAPI,Data Analyst",
   icons: {
     icon: [
       { url: "/favicon/favicon-96x96.png", sizes: "96x96", type: "image/png" },

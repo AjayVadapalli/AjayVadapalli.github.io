@@ -198,7 +198,7 @@ const ContactMe = () => {
 
         {/* reCAPTCHA */}
         <div className="mb-4">
-          <ReCAPTCHA ref={recaptchaRef} sitekey="6Ld1ItYqAAAAAEj3z-cMbbNQJqFmxVXCpFkn-_iC" />
+          <ReCAPTCHA ref={recaptchaRef} sitekey="6LdWBuQqAAAAABw49urKLivxuaznkcQIDCbogo_h" />
         </div>
 
         {/* Submit Button */}

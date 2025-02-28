@@ -7,20 +7,17 @@ const Header = () => {
       <div className="flex justify-between items-start my-8">
         <div className="flex flex-col md:w-9/12">
           <h1 className="text-3xl md:text-7xl font-bold">
-            Hi, I'm Ashwith 👋
+            Hi, I'm Ajay 👋
           </h1>
           <p className="md:text-xl">
-            Passionate developer with a love for creating innovative solutions.
-            I specialize in web development and enjoy working with various
-            technologies to bring ideas to life. My goal is to build
-            applications that are not only functional but also user-friendly and
-            visually appealing.🤠
+          Currently pursuing a BTech in Computer Science, my academic journey infuses theoretical knowledge with practical applications, focusing on AI and data analytics. My commitment to staying abreast of technological advancements drives me to continuously seek opportunities that align with our shared passion for innovation in data.
+          Passionate web developer with a focus on building user-friendly, responsive websites and actively engaging in hands-on projects to solve real-world challenges and enhance technical expertise.🤠
           </p>
         </div>
         <div className="relative flex-none md:w-64 md:h-64 h-24 w-24 bg-red-400 rounded-full overflow-hidden">
           <Image
             src="https://avatars.githubusercontent.com/u/147788165?v=4"
-            alt="Ashwith Rai"
+            alt="Ajay"
             fill
             sizes="(max-width: 768px) 50vw,
             (max-width: 1200px) 33vw,

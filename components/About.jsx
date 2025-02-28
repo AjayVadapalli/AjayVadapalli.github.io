@@ -5,15 +5,17 @@ const About = () => {
     <div className="flex flex-col my-8">
       <h2 className="font-bold text-xl">About</h2>
       <p className="text-muted-foreground text">
-        I'm a passionate <span className="text-muted-foreground font-bold">web developer</span> who loves turning ideas into functional,
-        user-friendly applications. From crafting sleek <span className="text-muted-foreground font-bold">weather apps</span> to
-        automating <span className="text-muted-foreground font-bold">LeetCode-to-GitHub</span> workflows, I enjoy building tools that
-        make life easier. Recently, I developed <span className="text-muted-foreground font-bold">Leet2Git</span>, a tool that transforms
-        LeetCode problems into well-structured GitHub repositories, and
-        <span className="text-muted-foreground font-bold">Get-My-Attendance</span>, a WiFi-based attendance system. I also won the <span className="text-muted-foreground font-bold">Best
-        About Us Page Award</span> in a web design competition and ranked <span className="text-muted-foreground font-bold">Top 5 in a
-        college hackathon</span>. Currently, I'm sharpening my web development skills
-        while gearing up to explore AI. 🚀
+      I'm a passionate <span className="text-muted-foreground font-bold">web developer</span> who loves turning ideas into functional,  
+user-friendly applications. I have worked on various projects, from building a  
+<span className="text-muted-foreground font-bold">YouTube Clone</span> to developing a <span className="text-muted-foreground font-bold">Band Name Generator</span> using Node.js.  
+
+I also have experience with <span className="text-muted-foreground font-bold">database-backed applications</span> and  
+have built several projects focusing on backend development. My expertise extends to <span className="text-muted-foreground font-bold">JavaScript-based web applications </span>  
+and Python projects like <span className="text-muted-foreground font-bold">Jarvis</span>, an AI-powered assistant.  
+
+Currently, I'm enhancing my web development skills while diving deeper into backend technologies and AI.  
+Additionally, I'm actively **learning Data Analysis**, exploring tools like **NumPy, Pandas, and SQL** to gain insights from data.
+ 🚀
       </p>
     </div>
   );

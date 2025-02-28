@@ -10,7 +10,7 @@ const Education = () => {
 			<div className="flex flex-col space-y-5">
 				<Link
 					className="block cursor-pointer"
-					href="https://msrit.edu"
+					href="https://www.vishnu.edu.in/"
 					target="_blank"
 					rel="noopener noreferrer"
 				>
@@ -20,8 +20,8 @@ const Education = () => {
 								<Image
 								width={48}
 								height={48}
-									alt="Ramaiah Institute of Technology Logo"
-									src="./Education/ramaiah.png"
+									alt="Vishnu Institute of technology Logo"
+									src="./Education/vishnu logo.png"
 								/>
 							</span>
 						</div>
@@ -29,15 +29,15 @@ const Education = () => {
 							<div className="flex flex-col">
 								<div className="flex items-center justify-between gap-x-2 text-base">
 									<h3 className="inline-flex items-center justify-center font-semibold leading-none text-xs sm:text-sm">
-										M S Ramaiah Institute of Technology Bengaluru
+										Vishnu Institute of technology, Bhimavaram
 									</h3>
 									<div className="text-xs sm:text-sm text-muted-foreground text-right flex-shrink-0">
 										<div className="">2023 - 2027</div>
-										<div className="">9.6 CGPA</div>
+										<div className="">8.65 CGPA</div>
 									</div>
 								</div>
 								<h3 className="font-sans text-xs text-muted-foreground">
-									Bachelor's Degree of Electronics and Communication (ECE)
+									Computer Science And Engineering (CSE)
 								</h3>
 							</div>
 						</div>
@@ -45,7 +45,7 @@ const Education = () => {
 				</Link>
 				<Link
 					className="block cursor-pointer"
-					href="https://vivekanandapuc.com/"
+					href="https://sasi.ac.in/"
 					target="_blank"
 					rel="noopener noreferrer"
 				>
@@ -54,8 +54,8 @@ const Education = () => {
 							<span className="relative flex shrink-0 overflow-hidden rounded-full border-4 border-card-foreground size-12 m-auto bg-muted-background dark:bg-foreground">
 								<Image
 									className="aspect-square h-full w-full object-cover"
-									alt="Vivekananda P U college Logo"
-									src="./Education/vivek.png"
+									alt="Sasi junior college Logo"
+									src="./Education/sasi school.jpg"
 									width={48}
 									height={48}
 								/>
@@ -65,15 +65,15 @@ const Education = () => {
 							<div className="flex flex-col">
 								<div className="flex items-center justify-between gap-x-2 text-base">
 									<h3 className="inline-flex items-center justify-center font-semibold leading-none text-xs sm:text-sm">
-										Vivekananda Pre University College Puttur
+										Sasi Junior College Mandapeta
 									</h3>
 									<div className="text-xs sm:text-sm text-muted-foreground text-right flex-shrink-0">
 										<div className="">2021 - 2023</div>
-										<div className="">94.8 %</div>
+										<div className="">98.1 %</div>
 									</div>
 								</div>
 								<h3 className="font-sans text-xs text-muted-foreground">
-								{/* Pre-University Education in PCMC (Physics, Chemistry, Mathematics, and Computer Science) */}
+								{/* Pre-University Education in PCMC (Physics, Chemistry, Mathematics) */}
 								Pre-University Education 
 								</h3>
 							</div>
@@ -92,8 +92,8 @@ const Education = () => {
 								<Image
 								width={48}
 								height={48}
-									alt="Priyadarshini Logo"
-									src="./Education/priyadarshini.png"
+									alt="sasi school Logo"
+									src="./Education/sasi school.jpg"
 								/>
 							</span>
 						</div>
@@ -101,11 +101,11 @@ const Education = () => {
 							<div className="flex flex-col">
 								<div className="flex items-center justify-between gap-x-2 text-base">
 									<h3 className="inline-flex items-center justify-center font-semibold leading-none text-xs sm:text-sm">
-										Priyadarshini English Medium School Bettampady
+										Sasi English Medium School Mandapeta
 									</h3>
 									<div className="text-xs sm:text-sm text-muted-foreground text-right flex-shrink-0">
-									<div className="">2011 - 2021</div>
-									<div className="">96.9 %</div>
+									<div className="">2020 - 2021</div>
+									<div className="">95.5 %</div>
 									</div>
 								</div>
 								<h3 className="font-sans text-xs text-muted-foreground">
