@@ -42,7 +42,7 @@ const ContactMe = () => {
 
     try {
       const response = await fetch(
-        "https://script.google.com/macros/s/AKfycbyDwQEPLt6ieIMk1AAUJ8JbGDopTDKH3hHbb_-TPShj4NrWOipoYdiNodgjUHmVycdTuQ/exec",
+        "https://script.google.com/macros/s/AKfycbzP5vJD-xMESODxvx04YZ-6YeoW4tw0GIYuIqHewI0vsOZRE3h-GIc_j9aMOmcxLxOG/exec",
         {
           method: "POST",
           body: form,
