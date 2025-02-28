@@ -29,18 +29,18 @@ const ContactMe = () => {
 
   const onSubmit = async (data) => {
     setLoading(true);
-
+  
     const token = recaptchaRef.current?.getValue();
     if (!token) {
       triggerNotification("error", "Please verify reCAPTCHA!");
       setLoading(false);
       return;
     }
-
+  
     const form = new FormData();
     Object.keys(data).forEach((key) => form.append(key, data[key]));
-    form.append("g-recaptcha-response", token);
-
+    form.append("g-recaptcha-response", token); // 🔥 This line ensures reCAPTCHA is sent!
+  
     try {
       const response = await fetch(
         "https://script.google.com/macros/s/AKfycbzSu-YWMxpSWyyKb1NGLwPYBl1ivaNQlwM_zFohch_Ub6XI5dSROTbPmTXHHNoYLK5q/exec",
@@ -50,12 +50,12 @@ const ContactMe = () => {
         }
       );
       const result = await response.json();
-
+  
       if (result.status === "Success") {
         triggerNotification("success", "Message successfully sent!");
         reset();
         recaptchaRef.current?.reset();
-      }else if (result.message === "CAPTCHA verification failed"){
+      } else if (result.message === "CAPTCHA verification failed") {
         triggerNotification("error", "Please verify reCAPTCHA!");
       } else {
         throw new Error("There was an error sending the message!");
@@ -66,6 +66,7 @@ const ContactMe = () => {
       setLoading(false);
     }
   };
+  
 
   return (
     <div className="mx-auto md:mx-0 md:items-stretch md:w-full flex flex-col p-4 mt-10 bg-card rounded-lg shadow-md">
