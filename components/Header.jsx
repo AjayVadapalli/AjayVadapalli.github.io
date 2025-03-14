@@ -16,7 +16,7 @@ const Header = () => {
         </div>
         <div className="relative flex-none md:w-64 md:h-64 h-24 w-24 bg-red-400 rounded-full overflow-hidden">
           <Image
-            src="https://i.pinimg.com/474x/94/4b/c8/944bc8639a85065beebddd72f6a33b64.jpg"
+            src="https://i.pinimg.com/736x/5c/e3/b0/5ce3b0bbafba9ac60edfad7d65b2697f.jpg"
             alt="Ajay"
             fill
             sizes="(max-width: 768px) 50vw,
