@@ -68,7 +68,7 @@ const Card = ({
               href={
                 website.startsWith("https://")
                   ? website
-                  : "https://ashwithrai.me/" + website
+                  : " https://ajayvadapalli.github.io/" + website
               }
               target="_blank"
               rel="noopener"
@@ -80,7 +80,7 @@ const Card = ({
             </Link>
           )}
           <Link
-            href={"https://github.com/Rai-shwith/" + github}
+            href={"https://github.com/AjayVadapalli/" + github}
             target="_blank"
             rel="noopener"
           >
