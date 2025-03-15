@@ -58,7 +58,7 @@ const FloatingBar = () => {
             className="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground rounded-full size-12"
             aria-label="X"
             data-state="closed"
-            href="https://wa.me/918247897228?text=Hey%20Ashwith%2C%20I%20came%20across%20your%20portfolio%20and%20would%20love%20to%20connect!"
+            href="https://wa.me/918247897228?text=Hey%20Ajay%2C%20I%20came%20across%20your%20portfolio%20and%20would%20love%20to%20connect!"
             target="_blank"
             >
             <Whatsapp />
