@@ -14,7 +14,7 @@ const Projects = () => {
       </p>
       <div className="grid md:grid-cols-3 w-full gap-5 justify-center mt-5">
         <Card
-          title={"Family-Trave-Tracker"}
+          title={"Family Travel Tracker"}
           time={"Jan 2025"}
           status={"Completed"}
           thumbnailSrc={"travel-tracker.png"}
@@ -39,7 +39,7 @@ const Projects = () => {
           
         />
         <Card
-          title={"Book-Blog"}
+          title={"Book Blog"}
           time={"Feb 2025"}
           status={"Maintained"}
           thumbnailSrc={"book.png"}
