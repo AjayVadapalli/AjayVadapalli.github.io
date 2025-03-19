@@ -13,6 +13,35 @@ const Projects = () => {
         some of my favorite projects below.
       </p>
       <div className="grid md:grid-cols-3 w-full gap-5 justify-center mt-5">
+        
+      <Card
+          title={"Movie Tracker"}
+          time={"Feb 2025"}
+          status={"Completed"}
+          thumbnailSrc={"movie.png"}
+          videoSrc={"movie-tracker.webm"}
+          website={"https://movie-tracker-pk7m.onrender.com/"}
+          github={"WebD-Projects/tree/main/Movie-Tracker"}
+          frameworks={[
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "Node.js",
+            "Express",
+            "EJS",
+            "firebase",
+            "bycrypt",
+            "passport.js",
+            "Google OAuth",
+            "CRUD Operations",
+            "restful API",
+            "Full Stack",
+            "On Render"
+          ]}
+          description={
+            "I built a *Movie Tracker Web Application* 🎬 where users can *search for movies*, *view detailed info* using an external API, and *add watched titles* to a personalized *dashboard* ✅. The app includes *user authentication* (with *email/password* and *Google OAuth*), and uses *EJS*, *Express*, *Node.js*, and *Firebase* on the backend 🔐. This project showcases my ability to build *full-stack applications* with *RESTful APIs*, implement *secure login systems*, and deliver an engaging, responsive UI for organizing and exploring movies efficiently 🍿."
+          }
+        />
         <Card
           title={"Family Travel Tracker"}
           time={"Jan 2025"}
@@ -149,6 +178,26 @@ const Projects = () => {
           ]}
           description={
             "I built an *interactive geography quiz website* 🌍 where users are given a *random country* and must enter its *capital city* 🏙️. Each correct answer *increases the score* 🏆, making it a fun way to *learn world capitals* and test your knowledge in real-time 🎯. The app is built with *Node.js*, *Express*, and a *PostgreSQL database*, with questions dynamically rendered using *EJS* and data managed through *JSON* and *SQL* for smooth performance 🔄. It's a simple, educational tool that combines *fun gameplay* with *full-stack functionality* ⚡."
+          }
+        />
+        <Card
+          title={"Simon Game"}
+          time={"Aug 2024"}
+          status={"Completed"}
+          thumbnailSrc={"simon.png"}
+          videoSrc={"simon.webm"}
+          website={"JavaScript-projects/Simon-Game"}
+          github={"JavaScript-projects/tree/main/Simon-Game"}
+          frameworks={[
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "Responsive",
+            "DOM Manipulation",
+            "Frontend"
+          ]}
+          description={
+            "I built a classic *Simon Game* 🧠 using *HTML*, *CSS*, and *JavaScript*. The game challenges users to *repeat color patterns* that get progressively harder 🎯. It features *dynamic DOM manipulation*, *audio feedback*, and *visual animations* to enhance interactivity. Designed to be fully *responsive* 📱, this project showcases my skills in *event handling*, *timing logic*, and *creating smooth, engaging user experiences* through frontend development."
           }
         />
         <Card
