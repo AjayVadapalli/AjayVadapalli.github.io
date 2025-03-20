@@ -200,7 +200,7 @@ const ContactMe = () => {
 
         {/* reCAPTCHA */}
         <div className="mb-4">
-          <ReCAPTCHA ref={recaptchaRef} sitekey="6LeHv_oqAAAAAASS3bJugYclVllBvrviL0tZ7GQK" />
+          <ReCAPTCHA ref={recaptchaRef} sitekey="6LfcSOUqAAAAAKLxvBAlKVqd__lzQjcm_f4kyKAn" />
         </div>
 
         {/* Submit Button */}
