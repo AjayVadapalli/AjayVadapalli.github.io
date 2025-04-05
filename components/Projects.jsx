@@ -13,6 +13,32 @@ const Projects = () => {
         some of my favorite projects below.
       </p>
       <div className="grid md:grid-cols-3 w-full gap-5 justify-center mt-5">
+
+      <Card
+          title={"IdeaNest"}
+          time={"Apr 2025"}
+          status={"Maintained"}
+          thumbnailSrc={"IdeaNest.png"}
+          videoSrc={"IdeaNest.webm"}
+          website={"https://idea-nest-snowy.vercel.app/"}
+          github={"Idea_Nest"}
+          frameworks={[
+            "HTML5",
+            "TypeScript",
+            "React",
+            "Next.js 15",
+            "Tailwind CSS v4",
+            "Sanity",
+            "Sentry",
+            "GitHub OAuth",
+            "Shadcn",
+            "Full Stack",
+            "Vercel"
+          ]}
+          description={
+            "I built *IdeaNest*, a collaborative *startup ideation web application* 🚀 where users can *log in via GitHub OAuth* 🔐 and *submit their startup ideas* through an intuitive form. Submitted ideas are instantly displayed on a dynamic *Startups page*, showcasing *title*, *category*, *description*, and an optional *image*. This project highlights my skills in *full-stack development*, *authentication integration*, and *real-time content rendering* using modern frameworks and tools like *Next.js 15*, *Sanity*, and *Tailwind CSS v4* 💡🌐."
+          }
+      />
         
       <Card
           title={"Movie Tracker"}
@@ -79,6 +105,29 @@ const Projects = () => {
           description={
             "I built a web application called Book Blog that allows users to share, browse, and manage book-related blog posts. Users can create, edit, and delete blog entries, each featuring a book title, description, and personal thoughts. The app showcases my ability to design full-stack applications with dynamic content rendering and real-time data handling using Firebase. It highlights my focus on clean UI, efficient CRUD operations, and seamless user experience for book lovers and bloggers alike."
           }
+        />
+        <Card
+          title={"AniLoop"}
+          time={"Mar 2025"}
+          status={"Completed"}
+          thumbnailSrc={"AniLoop.png"}
+          videoSrc={"AniLoop.webm"}
+          website={"https://aniloop-lyart.vercel.app/"}
+          github={"AniLoop"}
+          frameworks={[
+            "React",
+            "Next.js 15",
+            "HTML5",
+            "TypeScript",
+            "Tailwind CSS v4",
+            "Full Stack",
+            "ServerActions",
+            "On Vercel",
+          ]}
+          description={
+            "I built an *Anime Cards Web App* 🎴 to demonstrate the power of *Next.js 15 Server Actions* and smooth, efficient *infinite scrolling*. The app fetches anime data dynamically and displays it as an elegant grid of cards that *load seamlessly as the user scrolls* 📱⚡. This project showcases my ability to implement *modern full-stack patterns*, optimize *performance*, and deliver a *fluid user experience* using *React*, *TypeScript*, and *Tailwind CSS v4*, all deployed effortlessly *on Vercel* 🚀."
+          }
+          
         />
         <Card
           title={"Secrets Project"}
