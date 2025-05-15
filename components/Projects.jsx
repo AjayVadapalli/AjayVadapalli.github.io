@@ -15,6 +15,32 @@ const Projects = () => {
       <div className="grid md:grid-cols-3 w-full gap-5 justify-center mt-5">
 
       <Card
+          title={"Cargo Tracker"}
+          time={"May 2025"}
+          status={"Maintained"}
+          thumbnailSrc={"Cargo.png"}
+          videoSrc={"Cargo.webm"}
+          website={"https://cargo-tracker-frontend-two.vercel.app/fleet-management"}
+          github={"Cargo-Tracker-Frontend"}
+          frameworks={[
+            "HTML5",
+            "Tilewind CSS",
+            "JavaScript",
+            "React",
+            "Node.js",
+            "Express",
+            "MongoDB",
+            "Mongoose",
+            "REST API",
+            "MERN Stack",
+            "Vercel"
+          ]}
+          description={
+            "I developed a comprehensive Cargo Shipment Tracker 🚚 web application that allows users to create shipments, track shipments in real-time, and view their live shipment routes on an interactive map. The app features a user-friendly interface for submitting shipment details and provides up-to-date status updates including location, estimated arrival, and tracking history. This project showcases my expertise in full-stack development using React, Node.js, Express, MongoDB, and integration of mapping libraries like React Leaflet for dynamic geolocation visualization."
+          }
+      />
+
+      <Card
           title={"IdeaNest"}
           time={"Apr 2025"}
           status={"Maintained"}
