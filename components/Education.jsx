@@ -33,7 +33,7 @@ const Education = () => {
 									</h3>
 									<div className="text-xs sm:text-sm text-muted-foreground text-right flex-shrink-0">
 										<div className="">2023 - 2027</div>
-										<div className="">8.65 CGPA</div>
+										<div className="">8.72 CGPA</div>
 									</div>
 								</div>
 								<h3 className="font-sans text-xs text-muted-foreground">
