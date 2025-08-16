@@ -15,6 +15,29 @@ const Projects = () => {
       <div className="grid md:grid-cols-3 w-full gap-5 justify-center mt-5">
 
       <Card
+          title={"Sport Scheduler"}
+          time={"Aug 2025"}
+          status={"Maintained"}
+          thumbnailSrc={"sport.png"}
+          videoSrc={"sport.webm"}
+          website={"https://sports-scheduler-three.vercel.app/"}
+          github={"Sport_Scheduler"}
+          frameworks={[
+            "React vite",
+            "Tailwind CSS",
+            "JavaScript",
+            "Node.js",
+            "Express",
+            "PostgreSQL",
+            "Vercel",
+            "Render"
+          ]}
+          description={
+            "I built a Sports Scheduler 🏀⚽ web application that enables users to sign up, create and join sports sessions, and manage events effortlessly. The app includes role-based access for players and admins, real-time session updates, and detailed statistics on sports popularity and participation. It features a clean, responsive UI built with React, Vite, and Tailwind CSS, while the backend—powered by Node.js, Express, and PostgreSQL—ensures secure authentication via JWT and efficient data management. This project highlights my ability to deliver a full-stack application with seamless frontend-backend integration."
+          }
+      />
+
+      <Card
           title={"Cargo Tracker"}
           time={"May 2025"}
           status={"Maintained"}
