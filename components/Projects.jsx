@@ -15,6 +15,30 @@ const Projects = () => {
       <div className="grid md:grid-cols-3 w-full gap-5 justify-center mt-5">
 
       <Card
+          title={"SkyBox"}
+          time={"Sep 2025"}
+          status={"Maintained"}
+          thumbnailSrc={"SkyBox.png"}
+          videoSrc={"SkyBox.webm"}
+          website={"https://sky-box-ten.vercel.app/"}
+          github={"SkyBox"}
+          frameworks={[
+            "TypeScript",
+            "React 19",
+            "Next.js 15",
+            "Tailwind CSS",
+            "Appwrite",
+            "ShadCN",
+            "Full Stack",
+            "Vercel"
+          ]}
+          description={
+              "I developed *SkyBox*, a modern *storage management web application* 📂 where users can securely *upload, organize, and manage their and Share files* in a seamless interface. The app supports *authentication*, *real-time file updates*, and an elegant *dashboard view* for easy navigation. This project demonstrates my expertise in *full-stack development*, and *responsive UI design* using tools like *Next.js 15*, *Appwrite*, and *Tailwind CSS* ⚡🌐."
+          }
+
+      />
+
+      <Card
           title={"Sport Scheduler"}
           time={"Aug 2025"}
           status={"Maintained"}
@@ -72,7 +96,6 @@ const Projects = () => {
           website={"https://idea-nest-snowy.vercel.app/"}
           github={"Idea_Nest"}
           frameworks={[
-            "HTML5",
             "TypeScript",
             "React",
             "Next.js 15",
@@ -80,7 +103,7 @@ const Projects = () => {
             "Sanity",
             "Sentry",
             "GitHub OAuth",
-            "Shadcn",
+            "ShadCN",
             "Full Stack",
             "Vercel"
           ]}
