@@ -19,7 +19,7 @@ const Projects = () => {
         time={"Mar 2026"}
         status={"In Progress"}
         thumbnailSrc={"sketchScape.png"}
-        videoSrc={""}
+        videoSrc={"sketchScape.webm"}
         website={"https://sketch-scape.vercel.app/"}
         github={"SketchScape"}
         frameworks={[
