@@ -14,6 +14,28 @@ const Projects = () => {
       </p>
       <div className="grid md:grid-cols-3 w-full gap-5 justify-center mt-5">
 
+      <Card
+        title={"SketchScape"}
+        time={"Mar 2026"}
+        status={"In Progress"}
+        thumbnailSrc={"sketchScape.png"}
+        videoSrc={"sketchScape.webm"}
+        website={"https://sketch-scape.vercel.app/"}
+        github={"SketchScape"}
+        frameworks={[
+          "TypeScript",
+          "React",
+          "Vite",
+          "Tailwind CSS",
+          "Puter AI",
+          "AI Integration",
+          "Frontend",
+          "Vercel"
+        ]}
+        description={
+            "I developed *SketchScape*, an *AI-powered interior visualization web application* 🏠 where users can upload a *room sketch* and transform it into a *realistic room design* using AI. The platform provides a clean and responsive interface for sketch uploads and automatically generates photorealistic interior renders. This project highlights my skills in *AI integration*, *modern frontend development*, and *responsive UI design* using *React*, *Vite*, *Tailwind CSS*, and *Puter AI services* ⚡🎨."
+        }
+      />
 
       <Card
           title={"SkyBox"}
@@ -88,28 +110,6 @@ const Projects = () => {
           }
       />
 
-      <Card
-        title={"SketchScape"}
-        time={"Mar 2026"}
-        status={"In Progress"}
-        thumbnailSrc={"sketchScape.png"}
-        videoSrc={"sketchScape.webm"}
-        website={"https://sketch-scape.vercel.app/"}
-        github={"SketchScape"}
-        frameworks={[
-          "TypeScript",
-          "React",
-          "Vite",
-          "Tailwind CSS",
-          "Puter AI",
-          "AI Integration",
-          "Frontend",
-          "Vercel"
-        ]}
-        description={
-            "I developed *SketchScape*, an *AI-powered interior visualization web application* 🏠 where users can upload a *room sketch* and transform it into a *realistic room design* using AI. The platform provides a clean and responsive interface for sketch uploads and automatically generates photorealistic interior renders. This project highlights my skills in *AI integration*, *modern frontend development*, and *responsive UI design* using *React*, *Vite*, *Tailwind CSS*, and *Puter AI services* ⚡🎨."
-        }
-      />
 
       <Card
           title={"IdeaNest"}
