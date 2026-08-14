@@ -14,6 +14,53 @@ const Projects = () => {
       </p>
       <div className="grid md:grid-cols-3 w-full gap-5 justify-center mt-5">
 
+        <Card
+        title={"Edge UPI Sentinel"}
+        time={"Aug 2026"}
+        status={"Completed"}
+        thumbnailSrc={"edgeUpiSentinel.png"}
+        videoSrc={""}
+        website={""}
+        github={"edge-upi-sentinel-"}
+        frameworks={[
+          "Python",
+          "FastAPI",
+          "PostgreSQL",
+          "Scikit-learn",
+          "GNN",
+          "SHAP",
+          "AI/ML",
+          "Fraud Detection",
+          "Vercel"
+        ]}
+        description={
+          "I developed *Edge UPI Sentinel*, an *AI-powered UPI fraud detection and risk intelligence system* 💳 designed to identify suspicious transaction patterns and assess financial risk. The platform combines *machine learning*, *graph-based analysis*, and *SHAP explainability* to detect potentially fraudulent transactions and provide interpretable risk insights. Built with *Python*, *FastAPI*, and *PostgreSQL*, this project highlights my skills in *AI/ML*, *backend development*, *fraud detection*, and *data-driven security solutions* 🛡️⚡."
+        }
+      />
+
+      <Card
+        title={"Fake Product Review Detector"}
+        time={"May 2026"}
+        status={"Completed"}
+        thumbnailSrc={"fakeProductReview.png"}
+        videoSrc={""}
+        website={""}
+        github={"fake-product-review-detector"}
+        frameworks={[
+          "Python",
+          "Scikit-learn",
+          "NLTK",
+          "TF-IDF",
+          "SVM",
+          "NLP",
+          "Machine Learning",
+          "Text Classification"
+        ]}
+        description={
+          "I developed *Fake Product Review Detector*, an *NLP-based machine learning application* 📝 designed to identify computer-generated and original product reviews. The system uses *NLTK* for text preprocessing and *TF-IDF* for feature extraction, with multiple machine learning models including *SVM*, *Random Forest*, and *Logistic Regression* for classification. The SVM model achieved *88.11% accuracy* on the test set, demonstrating effective detection of potentially fake product reviews 🤖🔍."
+        }
+      />
+
       <Card
         title={"SketchScape"}
         time={"Mar 2026"}
