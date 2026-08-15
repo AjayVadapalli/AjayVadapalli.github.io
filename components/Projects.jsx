@@ -31,7 +31,8 @@ const Projects = () => {
           "SHAP",
           "AI/ML",
           "Fraud Detection",
-          "Vercel"
+          "Render",
+          "Streamlit"
         ]}
         description={
           "I developed *Edge UPI Sentinel*, an *AI-powered UPI fraud detection and risk intelligence system* 💳 designed to identify suspicious transaction patterns and assess financial risk. The platform combines *machine learning*, *graph-based analysis*, and *SHAP explainability* to detect potentially fraudulent transactions and provide interpretable risk insights. Built with *Python*, *FastAPI*, and *PostgreSQL*, this project highlights my skills in *AI/ML*, *backend development*, *fraud detection*, and *data-driven security solutions* 🛡️⚡."
