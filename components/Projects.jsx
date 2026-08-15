@@ -19,7 +19,7 @@ const Projects = () => {
         time={"Aug 2026"}
         status={"Completed"}
         thumbnailSrc={"edgeUpiSentinel.png"}
-        videoSrc={""}
+        videoSrc={"fraud-detection.webm"}
         website={""}
         github={"edge-upi-sentinel-"}
         frameworks={[
@@ -43,7 +43,7 @@ const Projects = () => {
         time={"May 2026"}
         status={"Completed"}
         thumbnailSrc={"fakeProductReview.png"}
-        videoSrc={""}
+        videoSrc={"fake-product.webm"}
         website={""}
         github={"fake-product-review-detector"}
         frameworks={[
