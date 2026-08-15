@@ -10,8 +10,7 @@ const Header = () => {
             Hi, I'm Ajay 👋
           </h1>
           <p className="md:text-xl">
-          Currently pursuing a BTech in Computer Science, my academic journey infuses theoretical knowledge with practical applications, focusing on AI and data analytics. My commitment to staying abreast of technological advancements drives me to continuously seek opportunities that align with our shared passion for innovation in data.
-          Passionate web developer with a focus on building user-friendly, responsive websites and actively engaging in hands-on projects to solve real-world challenges and enhance technical expertise.🤠
+          Currently pursuing a B.Tech in Computer Science and Engineering, with hands-on experience in full-stack development, AI, and machine learning. Passionate about building user-friendly web applications and practical ML/AI solutions that address real-world challenges. Continuously exploring modern technologies and working on projects to strengthen my software development and AI/ML skills.
           </p>
         </div>
         <div className="relative flex-none md:w-64 md:h-64 h-24 w-24 bg-red-400 rounded-full overflow-hidden">
