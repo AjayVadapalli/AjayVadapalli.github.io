@@ -7,6 +7,9 @@ const Projects = () => {
   const [expanded, setExpanded] = useState(false);
 
   const projectCategories = {
+
+    "OfflinePay": ["Backend Development", "Cybersecurity", "Database Management", "Other Projects"],
+    "MapMate AI": ["Artificial Intelligence & Machine Learning", "Full-Stack Development", "API Integration"],
     "Edge UPI Sentinel": ["Artificial Intelligence & Machine Learning", "Backend Development"],
     "Fake Product Review Detector": ["Artificial Intelligence & Machine Learning"],
     SketchScape: ["Artificial Intelligence & Machine Learning", "Frontend Development"],
@@ -37,6 +40,57 @@ const Projects = () => {
   const categories = ["All", "Full Stack Development", "Artificial Intelligence & Machine Learning", "Frontend Development", "Backend Development", "Other Projects"];
 
   const allProjects = [
+        <Card
+        title={"OfflinePay"}
+        time={"November 2026"}
+        status={"Completed"}
+        thumbnailSrc={"OfflinePay.png"}
+        videoSrc={"OfflinePay.webm"}
+        website={""}
+        github={"OfflinePay"}
+        frameworks={[
+          "Java",
+          "Spring Boot",
+          "Spring Data JPA",
+          "PostgreSQL",
+          "REST APIs",
+          "Maven",
+          "AES-256-GCM",
+          "RSA-OAEP",
+          "SHA-256",
+          "Concurrency",
+          "Transaction Management",
+          "JUnit"
+        ]}
+        description={
+          "I developed *OfflinePay*, a *simulated offline payment system* 💳 that demonstrates how payment instructions can be securely transferred through a Bluetooth-style mesh network and settled when an internet-connected device becomes available. Built with *Java* and *Spring Boot*, it uses *hybrid encryption (RSA-OAEP and AES-256-GCM)* to protect payment packets, SHA-256-based idempotency checks to prevent duplicate processing, and transactional database operations to maintain account balances and ledger consistency. The project also includes a software-based network simulator and concurrency tests to demonstrate reliable packet processing 🔐⚡."
+        }
+      />,
+
+        <Card
+          title={"MapMate AI"}
+          time={"November 2026"}
+          status={"Completed"}
+          thumbnailSrc={"MapMateAI.png"}
+          videoSrc={"MapMate AI.webm"}
+          website={"https://mapmate-ai.onrender.com/"}
+          github={"MapMate-AI"}
+          frameworks={[
+            "Python",
+            "Google ADK",
+            "Gemini API",
+            "Google Maps API",
+            "Next.js",
+            "React",
+            "TypeScript",
+            "AI Agents",
+            "Generative AI",
+            "API Integration"
+          ]}
+          description={
+            "I developed *MapMate AI*, a *conversational AI-powered maps assistant* 🗺️ that helps users discover nearby places and explore practical routes through natural language. The application uses *Google ADK* and *Gemini* to understand user queries and interact with *Google Maps Places API* and *Routes API*. It provides place information such as names, addresses, ratings (when available), and map links, along with route details including distance, estimated travel time, and turn-by-turn instructions for supported travel modes 🤖📍."
+          }
+        />,
         <Card
         title={"Edge UPI Sentinel"}
         time={"Aug 2026"}

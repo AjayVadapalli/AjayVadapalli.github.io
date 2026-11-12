@@ -7,7 +7,7 @@ const About = () => {
       <p className="text-muted-foreground text">
         I’m a{" "}
         <span className="text-muted-foreground font-bold">
-          Full-Stack Developer and AI/ML enthusiast
+          Full-Stack Developer and AI enthusiast
         </span>{" "}
         focused on building user-friendly, data-driven applications and{" "}
         <span className="text-muted-foreground font-bold">
@@ -15,16 +15,16 @@ const About = () => {
         </span>
         . I work with{" "}
         <span className="text-muted-foreground font-bold">
-          React, Next.js, Python, and modern web technologies
+          React, Next.js, Java, Python, and modern web technologies
         </span>
         , with a growing focus on{" "}
         <span className="text-muted-foreground font-bold">
-          Machine Learning, NLP, and data analytics
+          Machine Learning, Gen AI and Agentic AI
         </span>
         . I enjoy solving real-world problems through practical software and
         continuously exploring{" "}
         <span className="text-muted-foreground font-bold">
-          AI, ML, and scalable application development
+          AI, and scalable application development
         </span>
         .
       </p>

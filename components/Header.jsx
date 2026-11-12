@@ -10,7 +10,7 @@ const Header = () => {
             Hi, I'm Ajay 👋
           </h1>
           <p className="md:text-xl">
-          Currently pursuing a B.Tech in Computer Science and Engineering, with hands-on experience in full-stack development, AI, and machine learning. Passionate about building user-friendly web applications and practical ML/AI solutions that address real-world challenges. Continuously exploring modern technologies and working on projects to strengthen my software development and AI/ML skills.
+          Currently pursuing a B.Tech in Computer Science and Engineering, with hands-on experience in full-stack development, AI. Passionate about building user-friendly web applications and practical AI solutions that address real-world challenges. Continuously exploring modern technologies and working on projects to strengthen my software development and AI skills.
           </p>
           <div className="mt-5 flex flex-wrap gap-3" aria-label="Resume actions">
             <a
@@ -39,7 +39,7 @@ const Header = () => {
         </div>
         <div className="relative flex-none md:w-64 md:h-64 h-24 w-24 bg-red-400 rounded-full overflow-hidden">
           <Image
-            src="https://i.pinimg.com/736x/5c/e3/b0/5ce3b0bbafba9ac60edfad7d65b2697f.jpg"
+            src="https://avatars.githubusercontent.com/u/166938304?s=400&u=1c1d9be76a421126408573857e091cdbd92dbb4e&v=4"
             alt="Ajay"
             fill
             sizes="(max-width: 768px) 50vw,
