@@ -1,19 +1,42 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import Card from "./Card";
 
 const Projects = () => {
-  return (
-    <div className="flex flex-col items-center my-8">
-      {/* <button className='appearance-none px-3 py-1 text-sm text-background bg-foreground rounded-lg'>My Projects</button> */}
-      <h2 className="text-3xl font-bold tracking-tighter my-3">
-        Featured Projects
-      </h2>
-      <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed">
-        I build projects from 0 to 1, turning ideas into reality. Take a look at
-        some of my favorite projects below.
-      </p>
-      <div className="grid md:grid-cols-3 w-full gap-5 justify-center mt-5">
+  const [activeCategory, setActiveCategory] = useState("All");
+  const [expanded, setExpanded] = useState(false);
 
+  const projectCategories = {
+    "Edge UPI Sentinel": ["Artificial Intelligence & Machine Learning", "Backend Development"],
+    "Fake Product Review Detector": ["Artificial Intelligence & Machine Learning"],
+    SketchScape: ["Artificial Intelligence & Machine Learning", "Frontend Development"],
+    SkyBox: ["Full Stack Development", "Frontend Development", "Backend Development"],
+    "Sport Scheduler": ["Full Stack Development", "Frontend Development", "Backend Development"],
+    "Cargo Tracker": ["Full Stack Development", "Frontend Development", "Backend Development"],
+    IdeaNest: ["Full Stack Development", "Frontend Development", "Backend Development"],
+    "Movie Tracker": ["Full Stack Development", "Frontend Development", "Backend Development"],
+    "Family Travel Tracker": ["Full Stack Development", "Frontend Development", "Backend Development"],
+    "Book Blog": ["Full Stack Development", "Frontend Development", "Backend Development"],
+    AniLoop: ["Full Stack Development", "Frontend Development", "Backend Development"],
+    "Secrets Project": ["Full Stack Development", "Backend Development"],
+    "AI Assistant": ["Artificial Intelligence & Machine Learning", "Other Projects"],
+    "Permalist Project": ["Full Stack Development", "Backend Development"],
+    "Capital Quiz App": ["Full Stack Development", "Backend Development", "Other Projects"],
+    "Simon Game": ["Frontend Development", "Other Projects"],
+    "Dicee Game": ["Frontend Development", "Other Projects"],
+    "GitHub Profile Generator": ["Frontend Development"],
+    "Drum Kit": ["Frontend Development", "Other Projects"],
+    "Math Quiz": ["Frontend Development", "Other Projects"],
+    "Conference Ticket Generator": ["Frontend Development", "Other Projects"],
+    "Interactive Rating Component": ["Frontend Development", "Other Projects"],
+    "Tindog Webpage": ["Frontend Development"],
+    "YouTube Clone": ["Frontend Development"],
+    "MyTunes Music Webpage": ["Frontend Development"],
+    "Restaurant Webpage": ["Frontend Development"],
+  };
+  const categories = ["All", "Full Stack Development", "Artificial Intelligence & Machine Learning", "Frontend Development", "Backend Development", "Other Projects"];
+
+  const allProjects = [
         <Card
         title={"Edge UPI Sentinel"}
         time={"Aug 2026"}
@@ -37,7 +60,7 @@ const Projects = () => {
         description={
           "I developed *Edge UPI Sentinel*, an *AI-powered UPI fraud detection and risk intelligence system* 💳 designed to identify suspicious transaction patterns and assess financial risk. The platform combines *machine learning*, *graph-based analysis*, and *SHAP explainability* to detect potentially fraudulent transactions and provide interpretable risk insights. Built with *Python*, *FastAPI*, and *PostgreSQL*, this project highlights my skills in *AI/ML*, *backend development*, *fraud detection*, and *data-driven security solutions* 🛡️⚡."
         }
-      />
+      />,
 
       <Card
         title={"Fake Product Review Detector"}
@@ -60,7 +83,7 @@ const Projects = () => {
         description={
           "I developed *Fake Product Review Detector*, an *NLP-based machine learning application* 📝 designed to identify computer-generated and original product reviews. The system uses *NLTK* for text preprocessing and *TF-IDF* for feature extraction, with multiple machine learning models including *SVM*, *Random Forest*, and *Logistic Regression* for classification. The SVM model achieved *88.11% accuracy* on the test set, demonstrating effective detection of potentially fake product reviews 🤖🔍."
         }
-      />
+      />,
 
       <Card
         title={"SketchScape"}
@@ -83,7 +106,7 @@ const Projects = () => {
         description={
             "I developed *SketchScape*, an *AI-powered interior visualization web application* 🏠 where users can upload a *room sketch* and transform it into a *realistic room design* using AI. The platform provides a clean and responsive interface for sketch uploads and automatically generates photorealistic interior renders. This project highlights my skills in *AI integration*, *modern frontend development*, and *responsive UI design* using *React*, *Vite*, *Tailwind CSS*, and *Puter AI services* ⚡🎨."
         }
-      />
+      />,
 
       <Card
           title={"SkyBox"}
@@ -107,7 +130,7 @@ const Projects = () => {
               "I developed *SkyBox*, a modern *storage management web application* 📂 where users can securely *upload, organize, and manage their and Share files* in a seamless interface. The app supports *authentication*, *real-time file updates*, and an elegant *dashboard view* for easy navigation. This project demonstrates my expertise in *full-stack development*, and *responsive UI design* using tools like *Next.js 15*, *Appwrite*, and *Tailwind CSS* ⚡🌐."
           }
 
-      />
+      />,
 
       <Card
           title={"Sport Scheduler"}
@@ -130,7 +153,7 @@ const Projects = () => {
           description={
             "I built a Sports Scheduler 🏀⚽ web application that enables users to sign up, create and join sports sessions, and manage events effortlessly. The app includes role-based access for players and admins, real-time session updates, and detailed statistics on sports popularity and participation. It features a clean, responsive UI built with React, Vite, and Tailwind CSS, while the backend—powered by Node.js, Express, and PostgreSQL—ensures secure authentication via JWT and efficient data management. This project highlights my ability to deliver a full-stack application with seamless frontend-backend integration."
           }
-      />
+      />,
 
       <Card
           title={"Cargo Tracker"}
@@ -156,7 +179,7 @@ const Projects = () => {
           description={
             "I developed a comprehensive Cargo Shipment Tracker 🚚 web application that allows users to create shipments, track shipments in real-time, and view their live shipment routes on an interactive map. The app features a user-friendly interface for submitting shipment details and provides up-to-date status updates including location, estimated arrival, and tracking history. This project showcases my expertise in full-stack development using React, Node.js, Express, MongoDB, and integration of mapping libraries like React Leaflet for dynamic geolocation visualization."
           }
-      />
+      />,
 
 
       <Card
@@ -182,7 +205,7 @@ const Projects = () => {
           description={
             "I built *IdeaNest*, a collaborative *startup ideation web application* 🚀 where users can *log in via GitHub OAuth* 🔐 and *submit their startup ideas* through an intuitive form. Submitted ideas are instantly displayed on a dynamic *Startups page*, showcasing *title*, *category*, *description*, and an optional *image*. This project highlights my skills in *full-stack development*, *authentication integration*, and *real-time content rendering* using modern frameworks and tools like *Next.js 15*, *Sanity*, and *Tailwind CSS v4* 💡🌐."
           }
-      />
+      />,
         
       <Card
           title={"Movie Tracker"}
@@ -211,7 +234,7 @@ const Projects = () => {
           description={
             "I built a *Movie Tracker Web Application* 🎬 where users can *search for movies*, *view detailed info* using an external API, and *add watched titles* to a personalized *dashboard* ✅. The app includes *user authentication* (with *email/password* and *Google OAuth*), and uses *EJS*, *Express*, *Node.js*, and *Firebase* on the backend 🔐. This project showcases my ability to build *full-stack applications* with *RESTful APIs*, implement *secure login systems*, and deliver an engaging, responsive UI for organizing and exploring movies efficiently 🍿."
           }
-        />
+        />,
         <Card
           title={"Family Travel Tracker"}
           time={"Jan 2025"}
@@ -236,7 +259,7 @@ const Projects = () => {
             "Family Travel Tracker 🌍 is a web app I built using PostgreSQL, Node.js, Express, EJS, and JavaScript 🛠️. The app allows you to add family members 👨‍👩‍👧‍👦 and track which countries they've visited by simply entering the country name 🗺️. Each visited country is marked with a unique color on the map, making it easy to visualize global travel at a glance 🌈. This project highlights my skills in full-stack development, database integration, and creating interactive visual features that are both fun and informative 🎯."
           }
           
-        />
+        />,
         <Card
           title={"Book Blog"}
           time={"Feb 2025"}
@@ -249,7 +272,7 @@ const Projects = () => {
           description={
             "I built a web application called Book Blog that allows users to share, browse, and manage book-related blog posts. Users can create, edit, and delete blog entries, each featuring a book title, description, and personal thoughts. The app showcases my ability to design full-stack applications with dynamic content rendering and real-time data handling using Firebase. It highlights my focus on clean UI, efficient CRUD operations, and seamless user experience for book lovers and bloggers alike."
           }
-        />
+        />,
         <Card
           title={"AniLoop"}
           time={"Mar 2025"}
@@ -272,7 +295,7 @@ const Projects = () => {
             "I built an *Anime Cards Web App* 🎴 to demonstrate the power of *Next.js 15 Server Actions* and smooth, efficient *infinite scrolling*. The app fetches anime data dynamically and displays it as an elegant grid of cards that *load seamlessly as the user scrolls* 📱⚡. This project showcases my ability to implement *modern full-stack patterns*, optimize *performance*, and deliver a *fluid user experience* using *React*, *TypeScript*, and *Tailwind CSS v4*, all deployed effortlessly *on Vercel* 🚀."
           }
           
-        />
+        />,
         <Card
           title={"Secrets Project"}
           time={"Feb 2025"}
@@ -299,7 +322,7 @@ const Projects = () => {
           description={
             "SecretShare is a *Node.js web app* 🔐 that lets users *share their secrets anonymously* in a secure space 🕵️‍♂️. Built with *advanced authentication* using *Passport.js*, it supports *Google OAuth* and *local login/signup* for flexible access options 🔑. Secrets are stored safely and displayed anonymously, creating a space where users can *express freely without judgment* 🧠. This project showcases my skills in *secure full-stack development*, *user authentication*, and *building trust-focused web experiences*."
           }
-        />
+        />,
         <Card
           title={"AI Assistant"}
           time={"Oct 2024"}
@@ -321,7 +344,7 @@ const Projects = () => {
           description={
             "A *voice-enabled AI assistant* 🧠 built with *Python*, capable of *understanding voice commands* 🎙️ and responding through *text-to-speech* using *pyttsx3* 🔊. It can *search Wikipedia* 📚, *open websites* 🌐, and even interact with *OpenAI APIs* for intelligent conversations 🤖. This project demonstrates my skills in *AI integration*, *speech recognition*, and building *interactive Python-based tools* that bridge *natural language* and *automation* seamlessly ⚡."
           }
-        />
+        />,
         <Card
           title={"Permalist Project"}
           time={"Mar 2025"}
@@ -347,7 +370,7 @@ const Projects = () => {
           description={
             "Permalist is a *minimalist web app* 📝 I built for *creating and managing personal notes*. Users can *add*, *edit*, *view*, and *delete* notes effortlessly using a clean interface powered by *Node.js*, *Express*, and a *PostgreSQL database* 🗂️. The app focuses on *simplicity*, *speed*, and *data persistence*, making it easy to *keep track of thoughts, tasks, or reminders* 💡. This project highlights my skills in *full-stack CRUD operations*, *SQL database integration*, and building *efficient, user-focused tools* 🔧."
           }
-        />
+        />,
         <Card
           title={"Capital Quiz App"}
           time={"Dec 2024"}
@@ -372,7 +395,7 @@ const Projects = () => {
           description={
             "I built an *interactive geography quiz website* 🌍 where users are given a *random country* and must enter its *capital city* 🏙️. Each correct answer *increases the score* 🏆, making it a fun way to *learn world capitals* and test your knowledge in real-time 🎯. The app is built with *Node.js*, *Express*, and a *PostgreSQL database*, with questions dynamically rendered using *EJS* and data managed through *JSON* and *SQL* for smooth performance 🔄. It's a simple, educational tool that combines *fun gameplay* with *full-stack functionality* ⚡."
           }
-        />
+        />,
         <Card
           title={"Simon Game"}
           time={"Aug 2024"}
@@ -392,7 +415,7 @@ const Projects = () => {
           description={
             "I built a classic *Simon Game* 🧠 using *HTML*, *CSS*, and *JavaScript*. The game challenges users to *repeat color patterns* that get progressively harder 🎯. It features *dynamic DOM manipulation*, *audio feedback*, and *visual animations* to enhance interactivity. Designed to be fully *responsive* 📱, this project showcases my skills in *event handling*, *timing logic*, and *creating smooth, engaging user experiences* through frontend development."
           }
-        />
+        />,
         <Card
           title={"Dicee Game"}
           time={"Aug 2024"}
@@ -412,7 +435,7 @@ const Projects = () => {
           description={
             "I created a fun *Dice Challenge webpage* 🎲 where each time the page is *reloaded*, two dice are *randomly rolled* and the result is displayed instantly 🎯. The project uses *JavaScript DOM manipulation* to dynamically change dice images based on random values. It’s fully *responsive* 📱 and designed with smooth *visual feedback* for an engaging, lightweight experience. This project demonstrates my understanding of *core frontend concepts* and *interactive UI behavior* 🧠."
           }
-        />
+        />,
         <Card
           title={"GitHub Profile Generator"}
           time={"May 2024"}
@@ -426,7 +449,7 @@ const Projects = () => {
           description={
             "I built a *GitHub Profile Generator* 💻 that allows users to *enter any GitHub username* and instantly see a *profile card* with their *avatar*, *bio*, *repositories*, and other public details 🧑‍💻. The project uses the *GitHub API* to fetch real-time data and dynamically updates the UI using *JavaScript DOM manipulation* 🔄. It’s fully *responsive* 📱 and designed to deliver a *clean, interactive experience* for exploring GitHub profiles easily 🎯."
           }
-        />
+        />,
         <Card
           title={"Drum Kit"}
           time={"Jun 2024"}
@@ -439,7 +462,7 @@ const Projects = () => {
           description={
             "I built a fun and interactive *soundboard webpage* 🔊 featuring *7 buttons*, each mapped to a *unique sound effect* 🎵. When a user clicks any button, a different sound plays instantly, creating an *engaging and playful experience* 🎉. The project showcases my skills in *JavaScript DOM manipulation* and *event handling*, along with *responsive design* to ensure it works smoothly on both *desktop and mobile devices* 📱💻."
           }
-        />
+        />,
         <Card
           title={"Math Quiz"}
           time={"Apr 2024"}
@@ -458,7 +481,7 @@ const Projects = () => {
           description={
             "I built an interactive *Math Quiz Webpage* ➕➖ where users can *solve random math problems* and get *instant feedback* ✅. For every correct answer, the *score increases* 📈, and for incorrect ones, it *decreases* 📉 — keeping the challenge engaging 🧠. The questions are dynamically generated using *JavaScript*, and the interface is built with *HTML and CSS*, featuring smooth *DOM manipulation* for real-time updates. This project demonstrates my ability to create *fun, educational tools* with *responsive and interactive frontend logic* 🎯."
           }
-        />
+        />,
         <Card
           title={"Conference Ticket Generator"}
           time={"Nov 2024"}
@@ -478,7 +501,7 @@ const Projects = () => {
           description={
             "I completed a *Frontend Mentor Challenge* 🎯 where users fill out a *form with their details* 📝, and upon submission, a *personalized ticket* 🎟️ is generated and displayed on the screen. The project focuses on *form validation*, *responsive design* 📱, and *dynamic DOM manipulation* to ensure a *smooth and interactive user experience* 💡. It showcases my ability to build *clean, functional UIs* and handle *user input* effectively using *JavaScript* and *CSS*."
           }
-        />
+        />,
         <Card
           title={"Interactive Rating Component"}
           time={"Nov 2024"}
@@ -491,7 +514,7 @@ const Projects = () => {
           description={
             "I built a simple and responsive *Rating Component* ⭐ as part of a *Frontend Mentor Challenge* 🎯. Users can *select a rating* (e.g., 1–5) and upon submission, a *thank you card* is displayed showing the selected rating. This project highlights my skills in *form interaction*, *DOM manipulation*, and *responsive design*, while focusing on *clean UI* and *user feedback* 💡."
           }
-        />
+        />,
         <Card
           title={"Tindog Webpage"}
           time={"Mar 2024"}
@@ -504,7 +527,7 @@ const Projects = () => {
           description={
             "*TinDog* 🐶 is a *responsive webpage* built using *HTML, CSS, and Bootstrap* 🎨. It's a *landing page* for a fictional *dog dating app*, designed to showcase a *clean layout*, *responsive components*, and *mobile-first design* 📱. The project helped me practice *Bootstrap grid systems*, *pre-built components*, and *responsive web design principles* for creating modern, sleek webpages 💡."
           }
-        />
+        />,
         <Card
           title={"YouTube Clone"}
           time={"Feb 2024"}
@@ -517,7 +540,7 @@ const Projects = () => {
           description={
             "I built a *YouTube Clone* 📺 using *HTML* and *CSS* to replicate the *layout and design* of the original YouTube homepage 🎨. The project focuses on *responsive design* 📱, with a structured *video grid*, *sidebar navigation*, and *header section* — all styled to mimic the real platform. This clone helped me practice *frontend development* and understand how to recreate *real-world UI designs* from scratch 💡."
           }
-        />
+        />,
         <Card
           title={"MyTunes Music Webpage"}
           time={"Feb 2024"}
@@ -530,7 +553,7 @@ const Projects = () => {
           description={
             "I built a *MyTunes Music Webpage* 🎵 using *HTML* and *CSS* to create a *modern, responsive landing page* for a fictional *music streaming service* 🎧. The design includes *sections for music, videos, and subscriptions* 📀, with a clean layout and engaging visuals. This project helped me strengthen my *frontend skills* and practice building *aesthetic, responsive websites* that resemble *real-world product pages* 🌐."
           }
-        />
+        />,
         <Card
           title={"Restaurant Webpage"}
           time={"Jan 2024"}
@@ -543,8 +566,38 @@ const Projects = () => {
           description={
             "I built a *Restaurant Webpage* 🍽️ using *HTML* and *CSS*, featuring a *modern, responsive design* with a *well-structured grid layout* 🧩. The site includes *menu highlights*, *about us*, and *contact sections* 📋 — all arranged using a *clean, intuitive grid system* that adapts seamlessly across devices 📱💻. This project allowed me to sharpen my *frontend development skills* while focusing on *visual hierarchy*, *responsive layout*, and a *professional user experience* 🌟."
           }
-        />
+        />,
+  ];
+  const activeProjects = allProjects.filter((project) => activeCategory === "All" || projectCategories[project.props.title]?.includes(activeCategory));
+  const projects = expanded ? activeProjects : activeProjects.slice(0, 6);
+
+  return (
+    <div className="flex flex-col items-center my-8">
+      {/* <button className='appearance-none px-3 py-1 text-sm text-background bg-foreground rounded-lg'>My Projects</button> */}
+      <h2 className="text-3xl font-bold tracking-tighter my-3">
+        Featured Projects
+      </h2>
+      <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed">
+        I build projects from 0 to 1, turning ideas into reality. Take a look at
+        some of my favorite projects below.
+      </p>
+      <div className="flex flex-wrap justify-center gap-2 mt-5" role="group" aria-label="Filter projects by category">
+        {categories.map((category) => (
+          <button key={category} type="button" onClick={() => { setActiveCategory(category); setExpanded(false); }} aria-pressed={activeCategory === category}
+            className={`rounded-full border px-3 py-1.5 text-sm transition-colors ${activeCategory === category ? "bg-primary text-primary-foreground" : "bg-card text-card-foreground hover:bg-secondary"}`}>
+            {category}
+          </button>
+        ))}
       </div>
+      <div className="grid md:grid-cols-3 w-full gap-5 justify-center mt-5">
+        {projects.map((project) => React.cloneElement(project, { key: project.props.title }))}
+      </div>
+      {activeProjects.length > 6 && (
+        <button type="button" onClick={() => setExpanded((value) => !value)} aria-expanded={expanded}
+          className="mt-6 rounded-lg border px-5 py-2 text-sm font-semibold transition-colors hover:bg-secondary">
+          {expanded ? "Show Less" : "View All Projects"}
+        </button>
+      )}
     </div>
   );
 };
